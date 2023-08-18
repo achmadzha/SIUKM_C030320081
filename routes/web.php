@@ -37,5 +37,6 @@ Route::middleware('auth')->group(function() {
     
     Route::resource('mahasiswa', MahasiswaController::class);
     Route::resource('ukm', UkmController::class);
+    Route::get('/cetakUKM', [UkmController::class, 'cetak'])->name('cetak');
     Route::resource('anggota_ukm', AnggotaUkmController::class);
 });

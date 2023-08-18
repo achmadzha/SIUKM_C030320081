@@ -71,7 +71,7 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <p>Apakah Anda yakin ingin menghapus Data Pendaftaran dengan NIM <b>{{ $au->nim }}</b></p>
+                              <p>Apakah Anda yakin ingin menghapus Data Pendaftaran dengan NIM <b>{{ $au->mahasiswa->nim }}</b></p>
                             </div>
                             <div class="modal-footer justify-content-between">
                               <form action="{{ route('anggota_ukm.destroy',['anggota_ukm' => $au->id]) }}" method="POST">

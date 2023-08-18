@@ -12,7 +12,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Unit Kegiatan ukm</h1>
+            <h1>Data Unit Kegiatan Mahasiswa</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -27,7 +27,11 @@
               <!-- /.card-header -->
               <div class="card-body">
               <a href="{{ url('ukm/create') }}" class="btn btn-primary" style="margin-bottom:15px">
-              Tambah UKM</a>
+                Tambah UKM
+              </a>
+              <!-- <a href="{{ url('cetakUKM') }}" class="btn btn-primary" style="margin-bottom:15px">
+                Cetak UKM
+              </a> -->
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
@@ -58,7 +62,7 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <p>Apakah Anda yakin ingin menghapus UKM <b>{{ $ukm->id }}</b></p>
+                              <p>Apakah Anda yakin ingin menghapus UKM <b>{{ $ukm->nama }}</b></p>
                             </div>
                             <div class="modal-footer justify-content-between">
                               <form action="{{ route('ukm.destroy',['ukm' => $ukm->id]) }}" method="POST">

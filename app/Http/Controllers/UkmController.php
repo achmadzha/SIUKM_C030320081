@@ -19,6 +19,12 @@ class UkmController extends Controller
         return view('ukm.index',compact('data'));
     }
 
+    // public function cetak()
+    // {
+    //     $data = Ukm::get();
+    //     return view('ukm.cetakUKM',compact('data'));
+    // }
+
     /**
      * Show the form for creating a new resource.
      */
